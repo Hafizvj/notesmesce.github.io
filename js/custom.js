@@ -111,3 +111,10 @@ var pAgree = '1';
 window.addEventListener('load', function() {
 	$('a.smooth').smoothScroll({speed: 800});
 });
+
+$(document).ready(function () {
+  if (location.hash){
+    $(location.hash).collapse('show');
+    $(location.hash).parents('.accordion-body').collapse('show');
+  }
+});
